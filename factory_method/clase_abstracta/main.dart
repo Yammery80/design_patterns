@@ -1,9 +1,10 @@
-import 'figura_geometrica.dart';
 import 'triangulo.dart';
 
 void main() {
-  FiguraGeometrica unTriangulo = Triangulo(10, 15);
+ //No se puede instanciar un objeto de una clase abstracta
+ //FiguraGeometrica figura = FiguraGeometrica(); 
 
-  print("El área del triángulo es: ${unTriangulo.obtenerArea()}");
-  print("El perímetro del triángulo es: ${unTriangulo.obtenerPerimetro()}");
+Triangulo untriangulo = Triangulo();
+untriangulo.obtenerArea();
+print("El área del triángulo es: ${untriangulo.area}");
 }

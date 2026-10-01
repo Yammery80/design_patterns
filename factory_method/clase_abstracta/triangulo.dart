@@ -1,18 +1,19 @@
 import 'figura_geometrica.dart';
 
 class Triangulo implements FiguraGeometrica {
-  double baset;
-  double altura;
 
-  Triangulo(this.baset, this.altura);
+  double? perimetro;
+  double? area;
+  double baset =10;
+  double altura =15;
 
   @override
-  double obtenerArea() {
-    return baset * altura / 2;
+  void obtenerArea() {
+    this.area = (this.baset * this.altura / 2);
   }
 
   @override
-  double obtenerPerimetro() {
-    return baset * 3;
+  void  obtenerPerimetro() {
+    this.perimetro = (this.baset * 3);
   }
 }
