@@ -1,12 +1,11 @@
 import 'triangulo.dart';
 
-void main() { 
+void main() {
+  //No se puede instanciar un objeto de una clase abstracta
+  //FiguraGeometrica unafigura = FiguraGeometrica();
 
-  // No de puede intsnciar (crear un objeto) de una clase abstracta
-  //FiguraGeometrica unaFigura = FiguraGeometrica(); // Esto genera un error
+  Triangulo untriangulo = Triangulo();
 
-  Triangulo unTriangulo = Triangulo();
-
-  unTriangulo.obtenerArea();
-  print ('Area de un Triangulo: ${unTriangulo}');
+  untriangulo.calcularArea();
+  print("Area de triangulo: ${untriangulo.area}");
 }

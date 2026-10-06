@@ -1,4 +1,3 @@
-abstract class documento{
-  String generar (List<int> calificaciones);
+abstract class Documento {
+  String generar (List <int> calificaciones);
 }
- 

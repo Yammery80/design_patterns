@@ -1,19 +1,17 @@
-// clase que implementa figura geometrica 
-import 'figura-geometrica.dart';
+//Clase que implementa FiguraGeometrica
+import 'figura_geometrica.dart';
 
-class Triangulo implements FiguraGeometrica  {
-
+class Triangulo implements FiguraGeometrica {
   double? perimetro;
   double? area;
-  double? baset = 10;
-  double? altura = 15;
+  double baset = 10;
+  double altura = 15;
 
-  void obtenerArea() {
-    this.area = this.baset * this.altura / 2;
+  void calcularArea() {
+    this.area= (this.baset * this.altura / 2);
   }
 
-  void obtenerPerimetro(){
-    this.perimetro =  this.baset * 3;
+  void calcularPerimetro() {
+    this.perimetro= (this.baset * 3);
   }
-
 }
