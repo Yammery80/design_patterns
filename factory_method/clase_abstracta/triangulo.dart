@@ -14,4 +14,14 @@ class Triangulo implements FiguraGeometrica {
   void calcularPerimetro() {
     this.perimetro= (this.baset * 3);
   }
+
+  @override
+  void obtenerPerimetro() {
+    calcularPerimetro();
+  }
+
+  @override
+  void obtenerArea() {
+    calcularArea();
+  }
 }

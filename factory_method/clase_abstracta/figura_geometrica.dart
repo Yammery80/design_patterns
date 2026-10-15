@@ -1,9 +1,10 @@
-//Definir propiedades y comportamientos
-//de cualquier figura geometrica
+// Define las propiedades y comportamientos
+// de cualquier figura geométrica
 abstract class FiguraGeometrica {
   double? perimetro;
   double? area;
 
-  void calcularPerimetro();
-  void calcularArea();
+  void obtenerPerimetro();
+
+  void obtenerArea();
 }
