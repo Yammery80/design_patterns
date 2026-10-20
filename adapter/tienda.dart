@@ -12,7 +12,7 @@ class Tienda {
     if(metodo == 'servicio'){
       servicioPago.pagar(total);  
     }else if(metodo == 'terminal'){
-      terminalExterna.cobrar(total / 18.0);
+      terminalExterna.cobrar(total / 18.0); 
     }else {
       throw ArgumentError('Método de pago no válido');
     }
