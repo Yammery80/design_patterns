@@ -1,6 +1,4 @@
-import 'notificador.dart';
 import 'observador.dart';
-import 'panel-alumno.dart';
 
 class Agenda {
 
